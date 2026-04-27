@@ -1,168 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Scratch Page</title>
+    <meta charset="UTF-8">
+    <title>My Scratch Page: NFL Fandom & Data</title>
 
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e9ecef;
+            margin: 0;
+        }
 
-  <!-- Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+        .top-nav {
+            padding: 15px;
+            background-color: #dee2e6;
+        }
 
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #f8f9fa;
-    }
+        .top-nav a {
+            text-decoration: none;
+            color: #000;
+            margin-right: 10px;
+        }
 
-  .hero {
-  background: linear-gradient(135deg, #0d6efd, #5a8dee);
-  color: white;
-  padding: 80px 0;
-  text-align: center;
-}
+        .container {
+            padding: 20px;
+        }
 
-    .section {
-      padding: 80px 0;
-    }
+        h1 {
+            margin-top: 10px;
+        }
 
-    .content-box {
-      background: white;
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    }
+        .box {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
 
-    iframe {
-      border-radius: 15px;
-    }
-  </style>
+        img {
+            width: 250px;
+            border-radius: 5px;
+        }
+
+        iframe {
+            width: 500px;
+            height: 280px;
+        }
+
+        ul {
+            margin-top: 5px;
+        }
+    </style>
 </head>
 
 <body id="top">
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container">
-    <a class="navbar-brand fw-bold fs-4" href="index.html">Maxwell Richards</a>
-
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navMenu">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
-        <li class="nav-item"><a class="nav-link" href="scratch.html">Scratch</a></li>
-        <li class="nav-item"><a class="nav-link" href="app.html">Web App</a></li>
-        <li class="nav-item"><a class="nav-link" href="links.html">Links</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<!-- HEADER -->
-<section class="hero">
-  <div class="container">
-    <h1 class="fw-bold">My Scratch Page: Kansas City Chiefs and NFL Data</h1>
-    <p class="mt-3">
-      Although people think I am a bandwagon for being a Chiefs fan, my mom's family is from Missouri 
-      and so I was raised a loyal Chiefs fan by my uncles. This page shows a short clip of Patrick Mahomes as well as some interactive NFL data across the United States, representing my ability to write HTML and CSS from scratch
-    </p>
-  </div>
-</section>
-
-<!-- YOUTUBE VIDEO -->
-<section class="section">
-  <div class="container text-center">
-
-    <div class="content-box">
-
-      <h2 class="mb-4">Patrick Mahomes Clip</h2>
-
-      <iframe 
-        width="100%" 
-        height="500"
-        src="https://www.youtube.com/embed/MYAJ_xN1Mzk"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-      </iframe>
-
-    </div>
-
-  </div>
-</section>
-
-<!-- TABLEAU DASHBOARD -->
-<section class="section bg-light">
-  <div class="container text-center">
-
-    <div class="content-box">
-
-      <h2 class="mb-4">NFL Team Popularity by State</h2>
-
-      <!-- TABLEAU EMBED -->
-      <div class='tableauPlaceholder' id='viz1777314869351' style='position: relative'>
-        <noscript>
-          <a href='#'>
-            <img alt='Dashboard 1'
-              src='https://public.tableau.com/static/images/Mo/MostPopularNFLTeambyState/Dashboard1/1_rss.png'
-              style='border: none' />
-          </a>
-        </noscript>
-
-        <object class='tableauViz'>
-          <param name='host_url' value='https://public.tableau.com/' />
-          <param name='embed_code_version' value='3' />
-          <param name='name' value='MostPopularNFLTeambyState/Dashboard1' />
-          <param name='tabs' value='no' />
-          <param name='toolbar' value='yes' />
-        </object>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-<!-- BACK TO TOP -->
-<div class="text-center mb-4">
-  <a href="#top" class="btn btn-secondary">
-    ↑ Back to Top
-  </a>
+<!-- SIMPLE NAV LINKS -->
+<div class="top-nav">
+    <a href="index.html">Home</a> |
+    <a href="resume.html">Resume</a> |
+    <a href="app.html">Web App</a> |
+    <a href="links.html">Links</a>
 </div>
-<!-- FOOTER -->
-<!-- NAVIGATION BUTTONS -->
-<section class="section">
-  <div class="container text-center">
 
-    <h4 class="mb-4">Explore More</h4>
+<div class="container">
 
-    <a href="index.html" class="btn btn-primary btn-lg m-2">
-      <i class="bi bi-house"></i> Home
-    </a>
+    <h1>My Scratch Page: NFL Fandom & Data</h1>
 
-    <a href="resume.html" class="btn btn-outline-primary btn-lg m-2">
-      <i class="bi bi-file-earmark-text"></i> Resume
-    </a>
+    <!-- SECTION 1 -->
+    <div class="box">
+        <h2>Why the NFL is interesting to me</h2>
 
-    <a href="app.html" class="btn btn-outline-primary btn-lg m-2">
-      <i class="bi bi-cpu"></i> Web App
-    </a>
-    <a href="links.html" class="btn btn-outline-primary btn-lg m-2">
-  <i class="bi bi-link-45deg"></i> Links
-</a>
+        <p>
+            I’ve been a Chiefs fan my whole life because my mom’s family is from Missouri.
+            This page demonstrates my ability to write HTML and CSS from scratch while exploring NFL popularity data.
+        </p>
+    </div>
 
+    <!-- IMAGE + VIDEO -->
+    <div class="box">
+        <h3>Patrick Mahomes Highlight Video</h3>
 
-  </div>
-</section>
-<footer class="bg-dark text-white text-center p-3">
-  <p>© 2026 Maxwell Richards</p>
-</footer>
+        <img src="Images/mahomes.jpg" alt="Patrick Mahomes">
+
+        <br><br>
+
+        <!-- YOUTUBE EMBED -->
+        <iframe 
+            src="https://www.youtube.com/embed/MYAJ_xN1Mzk"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <!-- LIST SECTION -->
+    <div class="box">
+        <h3>What makes NFL fandom unique</h3>
+
+        <!-- ORDERED LIST WITH NESTED UNORDERED LIST -->
+        <ol>
+            <li>Regional loyalty
+                <ul>
+                    <li>Family traditions</li>
+                    <li>Local team success</li>
+                    <li>Historical rivalries</li>
+                </ul>
+            </li>
+            <li>Media influence</li>
+            <li>Star players</li>
+        </ol>
+
+        <!-- ANCHOR LINK -->
+        <a href="#top">Back to top</a>
+    </div>
+
+    <!-- TABLEAU -->
+    <div class="box">
+        <h3>Interactive Tableau Visualization</h3>
+
+        <p>Most Popular NFL Teams by County</p>
+
+        <div class='tableauPlaceholder' id='viz1777314869351'>
+            <object class='tableauViz'>
+                <param name='host_url' value='https://public.tableau.com/' />
+                <param name='embed_code_version' value='3' />
+                <param name='name' value='MostPopularNFLTeambyState/Dashboard1' />
+            </object>
+        </div>
+    </div>
+
+</div>
 
 <!-- TABLEAU SCRIPT -->
 <script>
@@ -175,8 +141,6 @@
   scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
   vizElement.parentNode.insertBefore(scriptElement, vizElement);
 </script>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
