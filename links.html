@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Links</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f8f9fa;
+      display: flex;
+      flex-direction: column;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #0d6efd, #5a8dee);
+      color: white;
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .section {
+      padding: 80px 0;
+    }
+
+    .link-card {
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .link-card:hover {
+      transform: translateY(-5px);
+    }
+
+    a {
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">Maxwell Richards</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+        <li class="nav-item"><a class="nav-link" href="scratch.html">Scratch</a></li>
+        <li class="nav-item"><a class="nav-link" href="app.html">Web App</a></li>
+        <li class="nav-item"><a class="nav-link active" href="links.html">Links</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <h1 class="fw-bold">Useful Links</h1>
+    <p>Explore resources and websites I find helpful</p>
+  </div>
+</section>
+
+<!-- LINKS -->
+<section class="section">
+  <div class="container">
+
+    <div class="row g-4">
+
+      <!-- LINK 1 -->
+      <div class="col-md-4">
+        <a href="https://www.linkedin.com" target="_blank">
+          <div class="link-card">
+            <i class="bi bi-linkedin fs-1 text-primary"></i>
+            <h4 class="mt-3">LinkedIn</h4>
+            <p>Connect professionally and build your network</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- LINK 2 -->
+      <div class="col-md-4">
+        <a href="https://github.com" target="_blank">
+          <div class="link-card">
+            <i class="bi bi-github fs-1"></i>
+            <h4 class="mt-3">GitHub</h4>
+            <p>View and share coding projects</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- LINK 3 -->
+      <div class="col-md-4">
+        <a href="https://public.tableau.com" target="_blank">
+          <div class="link-card">
+            <i class="bi bi-bar-chart fs-1 text-success"></i>
+            <h4 class="mt-3">Tableau Public</h4>
+            <p>Explore interactive data visualizations</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- LINK 4 -->
+      <div class="col-md-4">
+        <a href="https://www.espn.com" target="_blank">
+          <div class="link-card">
+            <i class="bi bi-trophy fs-1 text-danger"></i>
+            <h4 class="mt-3">ESPN</h4>
+            <p>Stay updated on sports news and stats</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- LINK 5 -->
+      <div class="col-md-4">
+        <a href="https://www.nfl.com" target="_blank">
+          <div class="link-card">
+            <i class="bi bi-flag fs-1 text-warning"></i>
+            <h4 class="mt-3">NFL</h4>
+            <p>Official NFL stats, teams, and highlights</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- LINK 6 -->
+      <div class="col-md-4">
+        <a href="https://www.byui.edu" target="_blank">
+          <div class="link-card">
+            <i class="bi bi-mortarboard fs-1 text-info"></i>
+            <h4 class="mt-3">BYU</h4>
+            <p>University resources and information</p>
+          </div>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+</main>
+<!-- NAV BUTTONS -->
+<section class="bg-light py-5">
+  <div class="container text-center">
+
+    <h4 class="mb-4">Explore More</h4>
+
+    <a href="index.html" class="btn btn-primary btn-lg m-2">
+      <i class="bi bi-house"></i> Home
+    </a>
+
+    <a href="resume.html" class="btn btn-outline-primary btn-lg m-2">
+      <i class="bi bi-file-earmark-text"></i> Resume
+    </a>
+
+    <a href="scratch.html" class="btn btn-outline-primary btn-lg m-2">
+      <i class="bi bi-code-slash"></i> Scratch Page
+    </a>
+
+    <a href="app.html" class="btn btn-outline-primary btn-lg m-2">
+      <i class="bi bi-cpu"></i> Web App
+    </a>
+
+  </div>
+</section>
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center p-3">
+  <p>© 2026 Maxwell Richards</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
