@@ -15,20 +15,30 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <style>
+    html, body {
+      height: 100%;
+    }
+
     body {
       font-family: 'Poppins', sans-serif;
       background-color: #f8f9fa;
-      text-align: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    main {
+      flex: 1;
     }
 
     .hero {
       background: linear-gradient(135deg, #0d6efd, #5a8dee);
       color: white;
       padding: 80px 0;
+      text-align: center;
     }
 
     .section {
-      padding: 80px 0;
+      padding: 100px 0;
     }
 
     .app-box {
@@ -38,18 +48,19 @@
       box-shadow: 0 10px 25px rgba(0,0,0,0.1);
       max-width: 600px;
       margin: auto;
-      margin-bottom: 80px;
+      text-align: center;
     }
 
     .riddle {
-      font-size: 1.2rem;
-      margin-bottom: 20px;
+      font-size: 1.3rem;
+      margin-bottom: 25px;
     }
 
     .answer {
       font-weight: bold;
       color: #0d6efd;
-      margin-top: 15px;
+      margin-top: 20px;
+      font-size: 1.2rem;
     }
   </style>
 </head>
@@ -77,6 +88,8 @@
   </div>
 </nav>
 
+<main>
+
 <!-- HERO -->
 <section class="hero">
   <div class="container">
@@ -93,15 +106,15 @@
 
       <p class="riddle" id="riddleText">Click the button to start!</p>
 
-      <button class="btn btn-primary btn-lg" onclick="newRiddle()">
-        New Riddle
-      </button>
+      <div class="d-flex justify-content-center gap-3 flex-wrap">
+        <button class="btn btn-primary btn-lg" onclick="newRiddle()">
+          New Riddle
+        </button>
 
-      <br><br>
-
-      <button class="btn btn-outline-secondary" onclick="showAnswer()">
-        Show Answer
-      </button>
+        <button class="btn btn-outline-secondary btn-lg" onclick="showAnswer()">
+          Show Answer
+        </button>
+      </div>
 
       <p class="answer" id="answerText"></p>
 
@@ -110,9 +123,11 @@
   </div>
 </section>
 
-<!-- NAV BUTTONS -->
-<section class="section bg-light">
-  <div class="container">
+</main>
+
+<!-- NAV BUTTONS (NOW RIGHT ABOVE FOOTER) -->
+<section class="bg-light py-5">
+  <div class="container text-center">
 
     <h4 class="mb-4">Explore More</h4>
 
@@ -139,26 +154,16 @@
 <!-- JS -->
 <script>
   const riddles = [
-    {
-      question: "What has keys but can't open locks?",
-      answer: "A piano"
-    },
-    {
-      question: "What has a head, a tail, but no body?",
-      answer: "A coin"
-    },
-    {
-      question: "What gets wetter the more it dries?",
-      answer: "A towel"
-    },
-    {
-      question: "I speak without a mouth and hear without ears. What am I?",
-      answer: "An echo"
-    },
-    {
-      question: "What can travel around the world while staying in one spot?",
-      answer: "A stamp"
-    }
+    { question: "What has keys but can't open locks?", answer: "A piano" },
+    { question: "What has a head, a tail, but no body?", answer: "A coin" },
+    { question: "What gets wetter the more it dries?", answer: "A towel" },
+    { question: "I speak without a mouth and hear without ears. What am I?", answer: "An echo" },
+    { question: "What can travel around the world while staying in one spot?", answer: "A stamp" },
+    { question: "What has hands but can’t clap?", answer: "A clock" },
+    { question: "The more you take, the more you leave behind. What are they?", answer: "Footsteps" },
+    { question: "What has one eye but can’t see?", answer: "A needle" },
+    { question: "What is always in front of you but can’t be seen?", answer: "The future" },
+    { question: "What has a neck but no head?", answer: "A bottle" }
   ];
 
   let currentRiddle = null;
